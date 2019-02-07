@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sublimetext - 榣山芒水</title>
+    <link>http://ggstdyu.github.io/categories/sublimetext/</link>
+    <description>Recent content in Sublimetext on 榣山芒水</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Feb 2019 08:27:56 +0800</lastBuildDate>
+    
+        <atom:link href="http://ggstdyu.github.io/categories/sublimetext/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>被 Markdown 搅扰的第一天</title>
+      <link>http://ggstdyu.github.io/post/third/</link>
+      <pubDate>Wed, 06 Feb 2019 08:27:56 +0800</pubDate>
+      
+      <guid>http://ggstdyu.github.io/post/third/</guid>
+      <description>换了好看的皮肤嗷～</description>
+    </item>
+  </channel>
+</rss>
