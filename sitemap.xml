@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>http://ggstdyu.github.io/</loc>
+    <lastmod>2019-02-04T17:48:44+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://ggstdyu.github.io/categories/</loc>
     <priority>0</priority>
   </url>
@@ -59,12 +64,6 @@
   
   <url>
     <loc>http://ggstdyu.github.io/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://ggstdyu.github.io/</loc>
-    <lastmod>2019-02-07T11:18:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
