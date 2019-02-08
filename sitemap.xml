@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ggstdyu.github.io/post/02_08/</loc>
+    <lastmod>2019-02-08T09:52:28+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ggstdyu.github.io/post/02_07/</loc>
     <lastmod>2019-02-07T11:18:07+08:00</lastmod>
   </url>
@@ -39,6 +44,12 @@
   </url>
   
   <url>
+    <loc>https://ggstdyu.github.io/categories/github/</loc>
+    <lastmod>2019-02-08T09:52:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ggstdyu.github.io/categories/hugo/</loc>
     <lastmod>2019-02-05T21:46:32+08:00</lastmod>
     <priority>0</priority>
@@ -52,7 +63,7 @@
   
   <url>
     <loc>https://ggstdyu.github.io/post/</loc>
-    <lastmod>2019-02-07T11:18:07+08:00</lastmod>
+    <lastmod>2019-02-08T09:52:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
