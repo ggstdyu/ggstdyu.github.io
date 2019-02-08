@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Doublecommander - 榣山芒水</title>
-    <link>http://ggstdyu.github.io/categories/doublecommander/</link>
+    <link>https://ggstdyu.github.io/categories/doublecommander/</link>
     <description>Recent content in Doublecommander on 榣山芒水</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Feb 2019 11:18:07 +0800</lastBuildDate>
     
-        <atom:link href="http://ggstdyu.github.io/categories/doublecommander/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://ggstdyu.github.io/categories/doublecommander/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>被 Markdown 搅扰的第二天</title>
-      <link>http://ggstdyu.github.io/post/02_07/</link>
+      <link>https://ggstdyu.github.io/post/02_07/</link>
       <pubDate>Thu, 07 Feb 2019 11:18:07 +0800</pubDate>
       
-      <guid>http://ggstdyu.github.io/post/02_07/</guid>
+      <guid>https://ggstdyu.github.io/post/02_07/</guid>
       <description>内附解决宠物不听话的方法嗷～</description>
     </item>
   </channel>

@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>榣山芒水</title>
-    <link>http://ggstdyu.github.io/</link>
+    <link>https://ggstdyu.github.io/</link>
     <description>Recent content on 榣山芒水</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Feb 2019 17:48:44 +0800</lastBuildDate>
     
-        <atom:link href="http://ggstdyu.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://ggstdyu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>被 Markdown 搅扰的第二天</title>
-      <link>http://ggstdyu.github.io/post/02_07/</link>
+      <link>https://ggstdyu.github.io/post/02_07/</link>
       <pubDate>Thu, 07 Feb 2019 11:18:07 +0800</pubDate>
       
-      <guid>http://ggstdyu.github.io/post/02_07/</guid>
+      <guid>https://ggstdyu.github.io/post/02_07/</guid>
       <description>内附解决宠物不听话的方法嗷～</description>
     </item><item>
       <title>被 Markdown 搅扰的第一天</title>
-      <link>http://ggstdyu.github.io/post/third/</link>
+      <link>https://ggstdyu.github.io/post/third/</link>
       <pubDate>Wed, 06 Feb 2019 08:27:56 +0800</pubDate>
       
-      <guid>http://ggstdyu.github.io/post/third/</guid>
+      <guid>https://ggstdyu.github.io/post/third/</guid>
       <description>换了好看的皮肤嗷～</description>
     </item><item>
       <title>小小昱学习Hugo的第二天</title>
-      <link>http://ggstdyu.github.io/post/second/</link>
+      <link>https://ggstdyu.github.io/post/second/</link>
       <pubDate>Tue, 05 Feb 2019 21:46:32 +0800</pubDate>
       
-      <guid>http://ggstdyu.github.io/post/second/</guid>
+      <guid>https://ggstdyu.github.io/post/second/</guid>
       <description>己亥年第一天嗷～ </description>
     </item><item>
       <title>小小昱学习Hugo的第一天</title>
-      <link>http://ggstdyu.github.io/post/first/</link>
+      <link>https://ggstdyu.github.io/post/first/</link>
       <pubDate>Mon, 04 Feb 2019 17:48:44 +0800</pubDate>
       
-      <guid>http://ggstdyu.github.io/post/first/</guid>
+      <guid>https://ggstdyu.github.io/post/first/</guid>
       <description>欢迎嗷～</description>
     </item>
   </channel>
