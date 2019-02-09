@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>被 Git 搅扰的第一天 &middot; 榣山芒水</title>
+  <meta name="description" content="一起 Git 嗷~" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://ggstdyu.github.io/css/main.min.css" />
+  
+  
+</head>
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://ggstdyu.github.io/" class="nav-text">小小昱</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://ggstdyu.github.io/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li><a href="https://ggstdyu.github.io/categories/doublecommander" class="hamburger-menu-overlay-link">Doublecommander</a></li><li><a href="https://ggstdyu.github.io/categories/git" class="hamburger-menu-overlay-link">Git</a></li><li><a href="https://ggstdyu.github.io/categories/github" class="hamburger-menu-overlay-link">Github</a></li><li><a href="https://ggstdyu.github.io/categories/hugo" class="hamburger-menu-overlay-link">Hugo</a></li><li><a href="https://ggstdyu.github.io/categories/markdown" class="hamburger-menu-overlay-link">Markdown</a></li><li><a href="https://ggstdyu.github.io/categories/sublimetext" class="hamburger-menu-overlay-link">Sublimetext</a></li>
+    </ul>
+  </div>
+</nav>
+    <main class="content side-text-padding">
+      <article class="post ">
+        <header class="post-header">
+        	<h1 class="post-title">被 Git 搅扰的第一天</h1>
+          <p class="post-date">Posted <time datetime="2019-02-09">Feb 9, 2019</time></p>
+        </header>
+
+        
+
+<p><font color=#cccccc>一起 Git 嗷~</font></p>
+
+<h1 id="关于-git-精彩的布道">关于 Git 精彩的布道</h1>
+
+<h4 id="font-color-ffffff-font"><font color=#ffffff>:-)</font></h4>
+
+<p>Git 是优雅的代名词，学习 Git 也要用优雅的方式 ，参考：<br />
+<a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></p>
+
+<ol>
+<li><p>Git Commit<br />
+Git 仓库中的提交记录保存的是你的目录下所有文件的快照，它的提交记录非常轻量，它会将当前版本与仓库中的上一个版本进行对比，并把所有的差异打包到一起作为一个提交记录。Git 还保存了提交的历史记录，支持快速地在这些提交记录之间切换。<br />
+<code>git commit //提交</code><br />
+<font color=#ffffff>:-)</font></p></li>
+
+<li><p>Git Branch<br />
+Git 的分支也非常轻量，它们只是简单地指向某个提交纪录。早建分支！多用分支！即使创建再多分的支也不会造成储存或内存上的开销，并且按逻辑分解工作到不同的分支要比维护那些特别臃肿的分支简单多了。<br />
+<code>git branch &lt;name&gt; //创建name新分支</code><br />
+<code>git checkout &lt;name&gt; //指向name分支</code><br />
+<code>git checkout -b &lt;name&gt; //创建并指向name分支</code><br />
+<font color=#ffffff>:-)</font></p></li>
+
+<li><p>Git Merge<br />
+Git 合并两个分支时会产生一个特殊的提交记录，它有两个父节点。<br />
+<code>git merge &lt;name&gt; //合并name分支与当前指向分支</code><br />
+<font color=#ffffff>:-)</font></p></li>
+
+<li><p>Git Rebase<br />
+Git 支持第二种合并分支的方法，它的过程是取出一系列的提交记录，“复制”它们，然后在另外一个地方逐个的放下去，这样做的优势是可以创造更线性的提交历史。<br />
+<code>git rebase &lt;name&gt; //将当前支线所有提交记录移至name下</code><br />
+<font color=#ffffff>:-)</font></p></li>
+
+<li><p>HEAD<br />
+HEAD 是一个对当前检出记录的符号引用，也就是指向正在其基础进行工作的提交记录。HEAD 总是指向当前分支上最近一次提交记录。大多数修改提交树的 Git 命令都是从改变 HEAD 的指向开始的。分离的 HEAD 就是让其指向了某个具体的提交记录而不是分支名。<br />
+<font color=#ffffff>:-)</font></p></li>
+
+<li><p>提交移动<br />
+Git 支持通过哈希值指定提交记录，但通过指定长达 40 位的提交记录哈希值在 Git 中移动不太方便，因此 Git 引入了相对引用。使用<code>^</code>向上移动一个提交记录，使用<code>~&lt;num&gt;</code>向上移动多个提交记录。<br />
+<code>git checkout &lt;name&gt;^ //指向name的父节点</code><br />
+<code>git checkout &lt;name&gt;~&lt;num&gt; //指向name的前num个节点</code><br />
+<code>git branch -f &lt;name0&gt; &lt;name1&gt;~&lt;num&gt; //强制将name0指向name1节点</code><br />
+<font color=#ffffff>:-)</font></p></li>
+
+<li><p>撤销变更<br />
+Git 中撤销变更的方法有很多。Reset 用于本地分支，先前所做的变更还在，但是处于未加入暂存区状态。Revert 用于远程分支，要撤销的提交记录后面会添加一个新提交记录，用以撤销更改并推送到远程仓库与别人分享。<br />
+<code>git reset &lt;name&gt; //回退至name节点</code><br />
+<code>git revert HEAD //添加新变更以抵消</code><br />
+<font color=#ffffff>:-)</font></p></li>
+
+<li><p>整理提交记录<br />
+Git 中整理提交记录的方法也有很多。Cherry-pick 将一些提交复制到当前所在的位置（HEAD）下面。交互式 Rebase 的参数简写为 -i，Git 会打开一个交互界面并列出将要被复制到目标分支的备选提交记录，它还会显示每个提交记录的哈希值和提交说明。<br />
+<code>git cherry-pick &lt;name&gt;...</code><br />
+<code>git rebase -i &lt;name&gt;</code><br />
+<font color=#ffffff>:-)</font></p></li>
+</ol>
+
+<p>几点问题：</p>
+
+<ul>
+<li>Git与SVN的主要差别：版本历史库存在于每个本地，还是中央仓库；commit不需要网络，还是需要网络</li>
+</ul>
+
+<pre><code>git init
+git add &lt;file&gt;
+git commit -m &lt;message&gt;
+git status //查看工作区状态
+git diff //比较工作区与暂存区（上次git add 的内容）
+git diff HEAD //比较工作区与版本库（上次git commit 的内容）
+git diff --staged //比较暂存区与版本库
+git log //查看提交日志
+git reflog //查看命令日志
+git reset --hard &lt;commit_id&gt; //回退到id的版本
+git checkout -- &lt;file&gt; //工作区回退到暂存区或版本库
+git reset HEAD &lt;file&gt; //暂存区回退到版本库
+</code></pre>
+
+<h1 id="关于-github-精彩的布道">关于 GitHub 精彩的布道</h1>
+
+<h4 id="font-color-ffffff-font-1"><font color=#ffffff>:-)</font></h4>
+
+<p>Git 是优雅的代名词，学习 GitHub 也要用优雅的方式。</p>
+
+<ol>
+<li>创建 SSH Key。终端键入<code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code>，密码设为无。</li>
+<li>复制 SSH Key。终端键入<code>cat ~/.ssh/id_rsa.pub</code>，复制公钥字符串。</li>
+<li>添加 SSH Key。登陆 GitHub，打开 Settings 页面，选择 SSH and GPG keys 选项卡添加。</li>
+</ol>
+
+<p>啊呀，没学完，明天继续学鸭</p>
+
+      </article>
+      
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://ggstdyu.github.io/post/02_08/" class="card blog-card" rel="bookmark" >
+    
+    <div class="card-img-container">
+      <p class="card-img-overlay">Next Article</p>
+      <picture>
+        
+        <source srcset="https://r.photo.store.qq.com/psb?/V138saUh1UmSrR/Of4Du1Oij6KDA*44lmALCj*RetBkR7Icz2YRbiygofQ!/r/dOcAAAAAAAAA">
+        <img src="https://r.photo.store.qq.com/psb?/V138saUh1UmSrR/Of4Du1Oij6KDA*44lmALCj*RetBkR7Icz2YRbiygofQ!/r/dOcAAAAAAAAA" class="card-img" >
+      </picture>
+    </div>
+    
+  <article class="card-body">
+    <h2 class="card-title">心态越发像个正经程序员了</h2>
+    <p class="card-text">今天搓麻雀嗷~</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2019-02-08 28:00">Feb 8, 2019</time></p>
+      <p>#GitHub </p>
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://ggstdyu.github.io/" class="card home-card" style="background-image: url( https://ggstdyu.github.io/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script src="https://ggstdyu.github.io/js/core.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+  </body>
+</html>
