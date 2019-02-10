@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sad - 榣山芒水</title>
+    <link>https://ggstdyu.github.io/categories/sad/</link>
+    <description>Recent content in Sad on 榣山芒水</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Feb 2019 04:37:25 +0800</lastBuildDate>
+    
+        <atom:link href="https://ggstdyu.github.io/categories/sad/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>遗憾的一天</title>
+      <link>https://ggstdyu.github.io/post/02_10/</link>
+      <pubDate>Sun, 10 Feb 2019 04:37:25 +0800</pubDate>
+      
+      <guid>https://ggstdyu.github.io/post/02_10/</guid>
+      <description>我最爱的鸡蛋嗷~</description>
+    </item>
+  </channel>
+</rss>
