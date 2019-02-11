@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Farewell - 榣山芒水</title>
+    <link>https://ggstdyu.github.io/categories/farewell/</link>
+    <description>Recent content in Farewell on 榣山芒水</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Feb 2019 22:35:33 +0800</lastBuildDate>
+    
+        <atom:link href="https://ggstdyu.github.io/categories/farewell/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>无限期停更</title>
+      <link>https://ggstdyu.github.io/post/02_11/</link>
+      <pubDate>Mon, 11 Feb 2019 22:35:33 +0800</pubDate>
+      
+      <guid>https://ggstdyu.github.io/post/02_11/</guid>
+      <description>要认真地做些事情嗷～</description>
+    </item>
+  </channel>
+</rss>
