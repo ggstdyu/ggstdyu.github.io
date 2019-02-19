@@ -100,15 +100,28 @@ Git 中整理提交记录的方法也有很多。Cherry-pick 将一些提交复�
 <pre><code>git init
 git add &lt;file&gt;
 git commit -m &lt;message&gt;
-git status //查看工作区状态
-git diff //比较工作区与暂存区（上次git add 的内容）
-git diff HEAD //比较工作区与版本库（上次git commit 的内容）
-git diff --staged //比较暂存区与版本库
+
+git diff //比较暂存区与工作区（上次git add 的内容）
+git diff HEAD //比较版本库与工作区（上次git commit 的内容）
+git diff --staged //比较版本库与暂存区
+
 git log //查看提交日志
 git reflog //查看命令日志
-git reset --hard &lt;commit_id&gt; //回退到id的版本
-git checkout -- &lt;file&gt; //工作区回退到暂存区或版本库
-git reset HEAD &lt;file&gt; //暂存区回退到版本库
+git status //查看工作区状态
+git log --graph --pretty=oneline --abbrev-commit //简单明了
+
+git reset --soft &lt;commit_id&gt; //版本库回退到id的版本
+git reset --mixed &lt;commit_id&gt; //版本库和暂存区回退(Unstaged changes after reset?)
+git reset --hard &lt;commit_id&gt; //全部回退到id的版本
+git checkout -- &lt;file&gt; //工作区回退到暂存区(或版本库???)
+git reset HEAD &lt;file&gt; //暂存区回退到版本库(Unstaged changes after reset?)
+
+git branch //列出分支
+git branch &lt;name&gt; //创建分支
+git checkout &lt;name&gt; //指向分支(工作区同时改变，惊了)
+git branch -d &lt;name&gt; //删除分支
+git checkout -b &lt;name&gt; //创建并指向分支
+git merge &lt;name&gt; //合并指定分支到当前分支
 </code></pre>
 
 <h1 id="关于-github-精彩的布道">关于 GitHub 精彩的布道</h1>
@@ -118,9 +131,43 @@ git reset HEAD &lt;file&gt; //暂存区回退到版本库
 <p>Git 是优雅的代名词，学习 GitHub 也要用优雅的方式。</p>
 
 <ol>
-<li>创建 SSH Key。终端键入<code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code>，密码设为无。</li>
-<li>复制 SSH Key。终端键入<code>cat ~/.ssh/id_rsa.pub</code>，复制公钥字符串。</li>
-<li>添加 SSH Key。登陆 GitHub，打开 Settings 页面，选择 SSH and GPG keys 选项卡添加。</li>
+<li><p>注册 GitHub 账号<br />
+<font color=#ffffff>:-)</font></p></li>
+
+<li><p>SSH 加密</p>
+
+<ol>
+<li>创建 SSH Key<br />
+终端键入<code>ssh-keygen -t rsa -C &quot;YourEmail@example.com&quot;</code>，密码设为无。<br /></li>
+<li>复制 SSH Key<br />
+终端键入<code>cat ~/.ssh/id_rsa.pub</code>，复制公钥字符串。<br /></li>
+<li>添加 SSH Key<br />
+登陆 GitHub，打开 Settings 页面，选择 SSH and GPG keys 选项卡，添加 SSH 公钥。<br />
+<font color=#ffffff>:-)</font></li>
+</ol></li>
+
+<li><p>第一个远程仓库</p>
+
+<ol>
+<li>创建远程仓库<br />
+Repository name 自定义，其他设置保持默认。</li>
+<li>关联本地仓库<br />
+打开终端，并进入仓库根目录。
+<code>git remote add origin git@github.com:GitHubName/RepoName.git</code></li>
+<li>本地推送远程<br />
+命令中的 -u 为关联本仓库与远程仓库的参数，再次推送时可以不添加该参数。<br />
+<code>git push -u origin master</code><br /></li>
+<li>克隆远程仓库<br />
+若要将他人仓库下载到本地时，使用克隆命令，打开终端，并进入仓库根目录。
+<code>git clone git@github.com:GitHubName/RepoName.git</code>
+<font color=#ffffff>:-)</font></li>
+</ol></li>
+
+<li><p>分支管理</p>
+
+<ol>
+<li>创建与合并<br /></li>
+</ol></li>
 </ol>
 
 <p>啊呀，没学完，明天继续学鸭</p>
